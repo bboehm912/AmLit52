@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123a24">
+  <title>Act II: Death of a Salesman | English 11</title>
+  <style>
+    :root{--green:#15803d;--dark:#123a24;--light:#f0fdf4;--ink:#172b20;--muted:#52645a;--border:#cbd5e1;--bg:#f8fafc;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
+    a{color:#166534;text-underline-offset:3px}button,input,textarea,select{font:inherit}button{cursor:pointer}:focus-visible{outline:3px solid #d99054;outline-offset:3px}
+    .shell{min-height:100vh;display:grid;grid-template-columns:220px minmax(0,1fr)}
+    aside{background:var(--dark);color:#e7eee1;padding:30px 22px;display:flex;flex-direction:column;gap:28px}
+    .brand{display:flex;align-items:center;gap:12px}.brand-icon{display:grid;place-items:center;width:39px;height:39px;border:1px solid #839789;border-radius:50%;font:17px Georgia;color:#d8e8a4}
+    .brand strong,.brand small{display:block}.brand strong{font-size:11px;text-transform:uppercase;letter-spacing:.14em}.brand small{font-size:10px;color:#a7b9a9;margin-top:5px}
+    .side-label,.eyebrow,.kicker{font-size:10px;letter-spacing:.15em;font-weight:700;text-transform:uppercase}.side-label{color:#a7b9a9}.side-link{display:block;color:#d6e5d7;font-size:13px;line-height:1.5;margin:12px 0}
+    .side-footer{margin-top:auto;border-top:1px solid #405249;padding-top:20px;font-size:11px;color:#c7d4c8;line-height:1.5}
+    main{min-width:0}.topbar{border-bottom:1px solid #d5ded8;padding:22px 5%;font-size:11px;letter-spacing:.05em;color:#526158}
+    .wrap{max-width:1200px;margin:auto;padding:22px 5% 55px}
+    .header{background:#fff;border-top:5px solid var(--green);border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.05);padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .identity{display:flex;gap:18px;align-items:center}.identity h2{font:700 22px 'Segoe UI',sans-serif;letter-spacing:0;margin:0 0 5px}.identity p{font-size:13px;color:#475569;margin:0}
+    .school-logo{width:70px;height:70px;flex:none;display:grid;place-items:center}.school-logo img{max-width:100%;max-height:100%;object-fit:contain}
+    .asset-placeholder{font-size:10px;line-height:1.3;text-align:center;color:#64748b}.stamp{position:relative;width:110px;height:110px;flex:none;display:grid;place-items:center}
+    .stamp-photo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;object-fit:cover}.stamp-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+    .stamp.has-asset .asset-placeholder{position:absolute;bottom:-13px;background:#fff}.stamp.has-both .asset-placeholder{display:none}
+    .tabs{display:flex;gap:10px;margin:18px 0}.tabs button{flex:1;padding:13px 10px;border:1px solid var(--border);border-radius:8px;background:#fff;color:#334155;font-size:12px;font-weight:700}.tabs button[aria-pressed=true]{background:var(--green);color:white;border-color:var(--green)}
+    .panel{background:#fff;border-radius:12px;padding:clamp(22px,4vw,36px);box-shadow:0 4px 12px rgba(0,0,0,.05);margin-bottom:20px}
+    h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:normal;letter-spacing:-.03em}h1{font-size:clamp(42px,5.5vw,70px);line-height:1.02;margin:0 0 20px}h2{font-size:clamp(31px,3.8vw,48px);line-height:1.1;margin:0 0 14px}h3{font-size:23px;margin:0 0 10px}p{line-height:1.65}li{line-height:1.55;margin-bottom:8px}.kicker{color:#678067;margin:0 0 15px}
+    .hero{border-radius:10px;background:var(--dark);color:#f7fcf4;overflow:hidden;display:grid;grid-template-columns:1fr .75fr;min-height:390px}.hero-copy{padding:clamp(30px,5vw,55px);align-self:center}.hero h1 em{color:#d8e8a4}.hero p{color:#d4e4d3;max-width:560px;font-size:15px}.hero-art{position:relative;min-height:300px;background:linear-gradient(90deg,#123a24,transparent 60%),linear-gradient(0deg,#123a24,transparent 45%),url('https://commons.wikimedia.org/wiki/Special:FilePath/WendellPierce.jpg?width=900') center 25%/cover}
+    .photo-credit{position:absolute;bottom:15px;right:15px;color:#fff;text-align:right;font-size:10px;text-shadow:0 1px 5px #000}.photo-credit a{color:#fff}.pill{display:inline-block;background:#dcfce7;color:#166534;border-radius:6px;padding:6px 10px;font-size:11px;font-weight:700;margin:3px 4px 3px 0}.hero .pill{background:#304d38;color:#ecf8de}
+    .intro{color:var(--muted);max-width:850px;font-size:15px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.box{background:#f8fafc;border:1px solid #dce5dd;border-radius:9px;padding:20px}.box p,.box li{font-size:14px;color:#4b5c51}.box p:last-child{margin-bottom:0}.callout{background:var(--light);border-left:4px solid var(--green);padding:16px 18px;border-radius:6px;margin:20px 0}.callout p:last-child{margin:0}.warning{background:#fff7ed;border-left-color:#c27132}.section-space{margin-top:32px}
+    .timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.timeline .box strong{color:#166534}.timeline p{margin:8px 0 0}.resource{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#f8fafc;border:1px solid var(--border);border-left:4px solid var(--green);border-radius:8px;padding:18px;margin-top:14px}.resource h3{font:700 16px 'Segoe UI',sans-serif;letter-spacing:0;margin:0 0 7px}.resource p{color:#475569;font-size:13px;margin:0}
+    .button,.resource a{display:inline-block;background:var(--green);color:#fff;border:0;border-radius:6px;padding:11px 15px;text-decoration:none;font-size:12px;font-weight:700}.button:hover,.resource a:hover{background:#166534;color:#fff}.button.secondary{background:#fff;color:#166534;border:1px solid #90b69a}
+    .activity{border:1px solid #d4dfd6;border-radius:10px;padding:clamp(18px,3vw,26px);margin-top:18px}.activity h3{margin-top:0}.activity>p{color:#52645a;font-size:14px}.activity label,.field label{display:block;font-weight:700;font-size:14px;margin-bottom:7px}.activity select,.field input,.field textarea{width:100%;padding:10px;border:1px solid #b7c8ba;border-radius:6px;background:#fff;color:#172b20}.activity select{margin-bottom:12px}.activity fieldset{border:0;padding:0;margin:15px 0}.activity legend{font-weight:700;font-size:14px;margin-bottom:10px}.option{display:block;font-weight:normal!important;margin:9px 0!important}.option input{margin-right:7px}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}.feedback{min-height:1.5em;margin:12px 0 0;font-size:14px;font-weight:600;color:#166534}.feedback.error{color:#9a3412}.field{margin:20px 0}.field textarea{min-height:110px;resize:vertical}.field input,.field textarea{font:inherit}.field textarea{line-height:1.5}
+    .js-only{display:none}.js .js-only{display:flex}[hidden]{display:none!important}.skip{position:absolute;top:-100px;left:12px;background:white;padding:10px;z-index:10}.skip:focus{top:12px}
+    @media(max-width:850px){.shell{grid-template-columns:1fr}aside{padding:15px 20px;display:block}.side-content,.side-footer{display:none}}
+    @media(max-width:650px){.wrap{padding:16px 16px 40px}.header{padding:14px}.identity{gap:10px}.identity h2{font-size:18px}.identity p{font-size:11px}.school-logo{width:52px;height:52px}.stamp{width:75px;height:75px}.stamp-photo{width:42px;height:42px}.tabs{gap:5px}.tabs button{font-size:11px;padding:11px 4px}.hero{grid-template-columns:1fr}.hero-art{min-height:260px;background-image:linear-gradient(180deg,#123a24,transparent 50%),linear-gradient(0deg,#123a24,transparent 45%),url('https://commons.wikimedia.org/wiki/Special:FilePath/WendellPierce.jpg?width=900')}.grid,.two,.timeline{grid-template-columns:1fr}.resource{align-items:flex-start;flex-direction:column}}
+    @media print{aside,.topbar,.tabs,.actions,.button,.print-hide{display:none!important}.shell{display:block}.wrap{padding:0}.panel,.header{box-shadow:none}.hero{min-height:0}.hero-art{min-height:250px}.activity,.box,.resource{break-inside:avoid}.field textarea{min-height:80px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#lesson">Skip to lesson</a>
+  <div class="shell">
+    <aside aria-label="Course information">
+      <div class="brand"><div class="brand-icon" aria-hidden="true">C</div><div><strong>Chisholm</strong><small>Literature classroom</small></div></div>
+      <div class="side-content"><p class="side-label">American literature</p><a class="side-link" href="index.html">Introduction lesson &larr;</a><p class="side-link">Act II: dreams under pressure</p></div>
+      <div class="side-footer">Grade 11 &middot; American Literature<br>Arthur Miller &middot; 1949</div>
+    </aside>
+    <main id="lesson">
+      <div class="topbar">ENGLISH 11 &nbsp; / &nbsp; AMERICAN LITERATURE &nbsp; / &nbsp; <strong>ACT II</strong></div>
+      <div class="wrap">
+        <!-- Put the same branding files as the introduction alongside this HTML file. -->
+        <header class="header">
+          <div class="identity"><div class="school-logo" id="school-logo"><span class="asset-placeholder">School logo<br>not added</span></div><div><h2>English 11</h2><p>American Literature &mdash; <em>Death of a Salesman</em>: Act II</p></div></div>
+          <div class="stamp" id="instructor-stamp"><span class="asset-placeholder">Instructor photo<br>&amp; stamp not added</span></div>
+        </header>
+        <nav class="tabs js-only" aria-label="Course sections"><button type="button" data-panel="lesson-panel" aria-pressed="true">Lesson Plan</button><button type="button" data-panel="resources-panel" aria-pressed="false">Resource Hub &amp; Games</button><button type="button" data-panel="checkpoint-panel" aria-pressed="false">Student Work Checkpoint</button></nav>
+
+        <section id="lesson-panel" aria-label="Act II lesson plan">
+          <div class="hero"><div class="hero-copy"><p class="kicker" style="color:#d8e8a4">11th grade English &nbsp; / &nbsp; Arthur Miller</p><h1>Act II:<br><em>Dreams under<br>pressure.</em></h1><p>Trace the distance between how the Lomans imagine success and the realities they confront.</p><span class="pill">2 class periods &middot; 50 minutes each</span><span class="pill">Read Act II before class</span></div><div class="hero-art" role="img" aria-label="Portrait of Wendell Pierce, who played Willy Loman in the 2022 Broadway production"><div class="photo-credit">Wendell Pierce &middot; portrait, not a production still<br><a href="https://commons.wikimedia.org/wiki/File:WendellPierce.jpg">Philip Romano</a> &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><br>Displayed with a visual crop</div></div></div>
+          <div class="panel section-space">
+            <p class="kicker">The big question</p><h2>What happens when a dream becomes too big to fit reality?</h2>
+            <p class="intro">In Act II, work, family, memory, and ambition collide. Students will move from close observation to a defensible argument about the pressures shaping Willy and Biff.</p>
+            <div class="callout warning"><strong>Content note:</strong> Act II includes discussion of suicide and ends with Willy's death. Use school support protocols, allow students to step out or use an alternative passage, and avoid asking anyone to disclose personal experiences. Students do not need to perform or reenact the death.</div>
+            <div class="grid">
+              <div class="box"><p class="kicker">Analyze</p><h3>Character &amp; conflict</h3><p>Explain how an Act II interaction reveals a tension between a character's expectations and circumstances.</p></div>
+              <div class="box"><p class="kicker">Interpret</p><h3>Form &amp; symbol</h3><p>Analyze how a stage direction, memory, or object contributes to a defensible interpretation.</p></div>
+              <div class="box"><p class="kicker">Argue</p><h3>Claim &amp; evidence</h3><p>Develop a claim about aspiration using two specific Act II details and reasoning that connects them.</p></div>
+            </div>
+            <div class="callout"><strong>Preparation:</strong> Students read Act II in a school-provided or licensed edition before these periods. Provide a copy of the play, notebooks, and devices for the hub. Page numbers vary by edition; locate evidence by scene or act and add page numbers from the student's copy.</div>
+          </div>
+          <div class="panel">
+            <p class="kicker">Teaching sequence</p><h2>Two days of close reading.</h2><p class="intro">Suggested pacing: two 50-minute periods after students have read Act II. Adjust discussion or written work for your class.</p>
+            <h3>Day 1 &middot; Reality meets expectation</h3>
+            <div class="timeline">
+              <div class="box"><strong>0&ndash;5 min &middot; Bellringer</strong><p>When can a goal become a burden? Respond using a fictional or hypothetical example; sharing is optional.</p></div>
+              <div class="box"><strong>5&ndash;15 min &middot; Reconstruct</strong><p>Individually complete the Act II Sequence Challenge in the Resource Hub, then compare choices with a partner and revisit the text.</p></div>
+              <div class="box"><strong>15&ndash;30 min &middot; Close reading</strong><p>In pairs, examine Willy's meeting with Howard. Annotate one spoken detail and one stage or performance choice. What does each suggest about power or value?</p></div>
+              <div class="box"><strong>30&ndash;43 min &middot; Discuss &amp; test</strong><p>Play the Reality Check in the hub. Defend answers with a scene detail, then discuss how Biff's meeting with Oliver complicates his earlier expectations.</p></div>
+              <div class="box"><strong>43&ndash;50 min &middot; Exit ticket</strong><p>Write one claim about work or status and support it with one specific Act II detail. Explain the connection in one sentence.</p></div>
+            </div>
+            <h3 class="section-space">Day 2 &middot; Memory, symbols, and argument</h3>
+            <div class="timeline">
+              <div class="box"><strong>0&ndash;5 min &middot; Revisit</strong><p>Reread yesterday's claim. What might someone reasonably challenge or qualify?</p></div>
+              <div class="box"><strong>5&ndash;17 min &middot; Memory on stage</strong><p>Locate the Boston memory and its relationship to the restaurant scene. Discuss how shifts in time and staging affect an audience's understanding of Biff and Willy.</p></div>
+              <div class="box"><strong>17&ndash;30 min &middot; Symbol studio</strong><p>Use the Symbol Studio in the hub: choose an object, generate an interpretation, find a detail in the play, and discuss an alternative reading.</p></div>
+              <div class="box"><strong>30&ndash;43 min &middot; Build an argument</strong><p>Draft a claim answering the big question. Use two Act II details, explain both, and acknowledge one reasonable counterargument. Optional extension: compare a class-selected Steinbeck passage.</p></div>
+              <div class="box"><strong>43&ndash;50 min &middot; Checkpoint</strong><p>Complete and print the Student Work Checkpoint, or submit the same responses through the class's normal workflow.</p></div>
+            </div>
+          </div>
+          <div class="panel"><p class="kicker">Assessment &amp; support</p><h2>Make the thinking visible.</h2>
+            <div class="grid two"><div class="box"><h3>Success criteria</h3><ul><li>A debatable claim addresses aspiration, identity, or social pressure.</li><li>Two accurate Act II details are located by scene and, when possible, page.</li><li>Reasoning explains how each detail supports the claim.</li><li>A counterargument or alternative reading is considered.</li></ul></div><div class="box"><h3>Access &amp; extension</h3><ul><li>Offer a scene list, paired reading, or a spoken rehearsal before writing.</li><li>Let students respond with a paragraph, conference, or teacher-approved organizer.</li><li>Extend by comparing a class-selected Steinbeck passage; distinguish similarities from important differences.</li></ul></div></div>
+          </div>
+        </section>
+
+        <section id="resources-panel" class="panel" aria-labelledby="resources-title">
+          <p class="kicker">Read, play, discuss</p><h2 id="resources-title">Lesson Resource &amp; Reference Hub</h2>
+          <p class="intro">Activities below refer to the full Act II and contain spoilers. Use your own edition to locate evidence; the games support discussion rather than replace close reading.</p>
+          <div class="resource"><div><h3><em>Death of a Salesman</em> &mdash; publisher's edition</h3><p>Print and ebook editions are available from the publisher. Purchase or institutional access may be required; this is not a free PDF.</p></div><a href="https://www.penguinrandomhouse.com/books/323531/death-of-a-salesman-by-arthur-miller-introduction-by-christopher-bigsby/">View publisher &rarr;</a></div>
+          <div class="resource"><div><h3>Arthur Miller and the Pulitzer Prize</h3><p>Background on the 1949 drama prize.</p></div><a href="https://www.pulitzer.org/winners/arthur-miller">View source &rarr;</a></div>
+          <noscript><div class="callout">The games need JavaScript. Without it, use the prompts below for discussion and put the sequence events in order on paper.</div></noscript>
+          <div class="activity" id="sequence">
+            <p class="kicker">Game 01 &nbsp; / &nbsp; pairs &middot; 10 minutes</p><h3>Act II Sequence Challenge</h3><p>Choose the order of these events as the play presents them, earliest to latest. Then use your text to explain why the sequence matters. The Boston memory is revealed during the restaurant scene, though the remembered event happened earlier.</p>
+            <form id="sequence-form">
+              <label for="seq-1">First</label><select id="seq-1" name="seq-1"><option value="">Choose an event</option><option value="howard">Willy meets Howard about his job</option><option value="morning">Willy and Linda talk at home in the morning</option><option value="restaurant">The restaurant scene and Boston memory</option><option value="home">The family confronts one another at home</option></select>
+              <label for="seq-2">Second</label><select id="seq-2" name="seq-2"><option value="">Choose an event</option><option value="howard">Willy meets Howard about his job</option><option value="morning">Willy and Linda talk at home in the morning</option><option value="restaurant">The restaurant scene and Boston memory</option><option value="home">The family confronts one another at home</option></select>
+              <label for="seq-3">Third</label><select id="seq-3" name="seq-3"><option value="">Choose an event</option><option value="howard">Willy meets Howard about his job</option><option value="morning">Willy and Linda talk at home in the morning</option><option value="restaurant">The restaurant scene and Boston memory</option><option value="home">The family confronts one another at home</option></select>
+              <label for="seq-4">Fourth</label><select id="seq-4" name="seq-4"><option value="">Choose an event</option><option value="howard">Willy meets Howard about his job</option><option value="morning">Willy and Linda talk at home in the morning</option><option value="restaurant">The restaurant scene and Boston memory</option><option value="home">The family confronts one another at home</option></select>
+              <div class="actions"><button type="submit" class="button">Check sequence</button><button type="reset" class="button secondary">Reset</button></div><p id="sequence-feedback" class="feedback" aria-live="polite"></p>
+            </form>
+          </div>
+          <div class="activity" id="quiz">
+            <p class="kicker">Game 02 &nbsp; / &nbsp; solo or pairs &middot; 10 minutes</p><h3>Reality Check</h3><p>Choose the best answer for each question. Check your score and use the feedback to return to the relevant scene.</p>
+            <form id="quiz-form">
+              <fieldset><legend>1. What happens when Willy asks Howard for a local job?</legend><label class="option"><input type="radio" name="q1" value="a">Howard promotes him to manager.</label><label class="option"><input type="radio" name="q1" value="b">Howard dismisses him instead.</label><label class="option"><input type="radio" name="q1" value="c">Howard agrees to send him on a shorter route.</label></fieldset>
+              <fieldset><legend>2. What does Biff discover after waiting to see Oliver?</legend><label class="option"><input type="radio" name="q2" value="a">Oliver remembers him as a close business partner.</label><label class="option"><input type="radio" name="q2" value="b">Oliver immediately offers him a loan.</label><label class="option"><input type="radio" name="q2" value="c">Oliver does not recognize him as Biff had hoped.</label></fieldset>
+              <fieldset><legend>3. What dramatic technique brings the Boston incident into the restaurant sequence?</legend><label class="option"><input type="radio" name="q3" value="a">A shift into a staged memory from the past.</label><label class="option"><input type="radio" name="q3" value="b">A newspaper article read aloud by Howard.</label><label class="option"><input type="radio" name="q3" value="c">A narrator summarizes a future event.</label></fieldset>
+              <div class="actions"><button type="submit" class="button">Check answers</button><button type="reset" class="button secondary">Try again</button></div><div id="quiz-feedback" class="feedback" aria-live="polite"></div>
+            </form>
+          </div>
+          <div class="activity">
+            <p class="kicker">Activity 03 &nbsp; / &nbsp; discussion &middot; 13 minutes</p><h3>Symbol Studio</h3><p>Choose an Act II object to generate a discussion prompt. Interpretations are not automatically graded: support your reading with evidence and consider a different possibility.</p>
+            <label for="symbol-choice">Choose an object</label><select id="symbol-choice"><option value="">Choose an object</option><option value="seeds">Seeds</option><option value="recorder">Howard's recording machine</option><option value="pen">Oliver's fountain pen</option></select>
+            <div class="actions"><button type="button" id="symbol-button" class="button">Reveal discussion prompt</button></div><div id="symbol-feedback" class="feedback" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section id="checkpoint-panel" class="panel" aria-labelledby="checkpoint-title">
+          <p class="kicker">Reflect &amp; respond</p><h2 id="checkpoint-title">Student Work Checkpoint</h2><p class="intro">Develop an argument about Act II. Responses stay in this page only: they are not saved or submitted. Print before leaving or copy your work into your class's usual submission system.</p>
+          <form id="checkpoint-form">
+            <div class="field"><label for="student">Name</label><input id="student" name="student" autocomplete="name"></div>
+            <div class="field"><label for="claim">Claim: How does Act II challenge an idea about success?</label><textarea id="claim" name="claim"></textarea></div>
+            <div class="field"><label for="evidence">Identify two specific Act II details. Include scene and page numbers from your edition when possible.</label><textarea id="evidence" name="evidence"></textarea></div>
+            <div class="field"><label for="reasoning">Explain how each detail supports your claim. Consider an alternative interpretation.</label><textarea id="reasoning" name="reasoning"></textarea></div>
+            <button type="submit" class="button">Print checkpoint</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script>
+    (() => {
+      const tabButtons = Array.from(document.querySelectorAll('[data-panel]'));
+      const panels = tabButtons.map(button => document.getElementById(button.dataset.panel));
+      function showPanel(id) {
+        panels.forEach(panel => { panel.hidden = panel.id !== id; });
+        tabButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.panel === id)));
+      }
+      tabButtons.forEach(button => button.addEventListener('click', () => showPanel(button.dataset.panel)));
+      function loadBrandImage(containerId, filename, alt, className) {
+        const container = document.getElementById(containerId);
+        const image = new Image();
+        image.className = className;
+        image.alt = alt;
+        image.addEventListener('load', () => {
+          container.append(image);
+          container.classList.add('has-asset');
+          if (containerId === 'school-logo') container.querySelector('.asset-placeholder').hidden = true;
+          if (container.querySelector('.stamp-photo') && container.querySelector('.stamp-svg')) container.classList.add('has-both');
+        });
+        image.addEventListener('error', () => console.warn('Branding asset not found:', filename));
+        image.src = filename;
+      }
+      loadBrandImage('school-logo', 'chisholm_logo.png', 'Chisholm school logo', '');
+      loadBrandImage('instructor-stamp', 'boehm_photo.jpg', 'Instructor photo', 'stamp-photo');
+      loadBrandImage('instructor-stamp', 'boehm-stamp.svg', 'Classroom stamp', 'stamp-svg');
+      const sequenceForm = document.getElementById('sequence-form');
+      const sequenceFeedback = document.getElementById('sequence-feedback');
+      sequenceForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const choices = Array.from(sequenceForm.querySelectorAll('select'), select => select.value);
+        if (choices.some(choice => !choice) || new Set(choices).size !== choices.length) {
+          sequenceFeedback.classList.add('error');
+          sequenceFeedback.textContent = 'Choose each event exactly once before checking.';
+          return;
+        }
+        const expected = ['morning', 'howard', 'restaurant', 'home'];
+        const correct = choices.filter((choice, index) => choice === expected[index]).length;
+        sequenceFeedback.classList.toggle('error', correct !== expected.length);
+        sequenceFeedback.textContent = correct === expected.length
+          ? 'Correct! Consider how the restaurant scene brings an earlier memory into the present action.'
+          : correct + ' of 4 positions match. Revisit the transitions in Act II and try again. The Boston memory is shown during the restaurant scene.';
+      });
+      sequenceForm.addEventListener('reset', () => { sequenceFeedback.textContent = ''; sequenceFeedback.classList.remove('error'); });
+      const quizForm = document.getElementById('quiz-form');
+      const quizFeedback = document.getElementById('quiz-feedback');
+      quizForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const answers = new FormData(quizForm);
+        if (['q1', 'q2', 'q3'].some(name => !answers.has(name))) {
+          quizFeedback.classList.add('error');
+          quizFeedback.textContent = 'Answer all three questions before checking.';
+          return;
+        }
+        const checks = [
+          {name:'q1', value:'b', explanation:'Howard dismisses Willy when he asks for a local job.'},
+          {name:'q2', value:'c', explanation:'Oliver does not recognize Biff as Biff expected.'},
+          {name:'q3', value:'a', explanation:'The restaurant action shifts into Willy’s memory of Boston.'}
+        ];
+        const score = checks.filter(check => answers.get(check.name) === check.value).length;
+        quizFeedback.classList.toggle('error', score < checks.length);
+        quizFeedback.replaceChildren();
+        const summary = document.createElement('p');
+        summary.textContent = 'Score: ' + score + ' of 3. Use your text to explain each answer:';
+        const list = document.createElement('ol');
+        checks.forEach(check => {
+          const item = document.createElement('li');
+          item.textContent = (answers.get(check.name) === check.value ? 'Correct. ' : 'Revisit this scene. ') + check.explanation;
+          list.append(item);
+        });
+        quizFeedback.append(summary, list);
+      });
+      quizForm.addEventListener('reset', () => { quizFeedback.replaceChildren(); quizFeedback.classList.remove('error'); });
+      const symbolPrompts = {
+        seeds:'Willy plants seeds late in Act II. How might they suggest hope, legacy, or frustration? Find a staging or dialogue detail, then propose another reading.',
+        recorder:'Howard demonstrates his recording machine during Willy’s visit. How might the device highlight whose voice receives attention? Identify a stage detail and offer another interpretation.',
+        pen:'Biff takes Oliver’s fountain pen. How might this act complicate his sense of success or identity? Cite a surrounding detail and consider a different explanation.'
+      };
+      document.getElementById('symbol-button').addEventListener('click', () => {
+        const choice = document.getElementById('symbol-choice').value;
+        const feedback = document.getElementById('symbol-feedback');
+        feedback.classList.toggle('error', !choice);
+        feedback.textContent = choice ? symbolPrompts[choice] : 'Choose an object before revealing a prompt.';
+      });
+      document.getElementById('checkpoint-form').addEventListener('submit', event => { event.preventDefault(); window.print(); });
+      document.documentElement.classList.add('js');
+      showPanel('lesson-panel');
+    })();
+  </script>
+</body>
+</html>
